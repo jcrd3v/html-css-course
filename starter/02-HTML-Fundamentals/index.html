@@ -1,9 +1,10 @@
 <!--This is needed to let the browser know that we're using html for this file-->
 <!DOCTYPE html>
 <!-- Every html file need the 'html' element, then the head element and the body element-->
-<html>
+<html lang="en">
   <!--the 'head' element has things thar aren't visible (rendered)in the browser window: page title, link to css files, information about the page, etc-->
   <head>
+    <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
   </head>
   <!--The 'body' element shows all the elements in the browser window-->
@@ -18,9 +19,24 @@
     -->
 
     <h1>📘 The Code Magazine</h1>
-    <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
     <h2>The Basic Language of the Web: HTML</h2>
+    <img
+      src="laura-jones.jpg"
+      alt="Headshot of Laura Jones."
+      width="50"
+      height="50"
+    />
+    <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+    <!-- 
+    some elements don't have content like 'img'.
+    attributes: pieces of data which we can use to describe our element, i.e. 'src' to indicate the image and 'alt' to indicate the description of the image -->
+    <img
+      src="post-img.jpg"
+      alt="HTML code on a screen."
+      width="500"
+      height="200"
+    />
     <p>
       All modern websites and web applications are built using three
       <em>fundamental</em>
@@ -44,7 +60,28 @@
       paragraphs, links, headings, images, video, etc. Web browsers understand
       HTML and render HTML code as websites.
     </p>
+    <p>In HTML, each element is made up of 3 parts:</p>
+    <ol>
+      <li>The opening tag</li>
+      <li>The closing tag</li>
+      <li>The actual element</li>
+    </ol>
 
     <h3>Why should you learn HTML?</h3>
+    <p>
+      There are countless reasons for learning the fundamental language of the
+      web. Here are 5 of them:
+    </p>
+    <ul>
+      <li>To be able to use the fundamental web dev language</li>
+      <li>
+        To hand-craft beautiful websites instead of relying on tools like
+        Worpress or Wix
+      </li>
+      <li>To build web applications</li>
+      <li>To impress friends</li>
+      <li>To have fun 😃</li>
+    </ul>
+    <p>Hopefully you learned something new here. See you next time!</p>
   </body>
 </html>
