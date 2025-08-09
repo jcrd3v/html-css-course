@@ -1,0 +1,39 @@
+h1 /* selector */ 
+/* declaration block */
+{
+    color: blue; /* this declaration contains "property: value(keyword);"*/ 
+    font-size: 26px;  /* property: value (length)*/
+    font-family: sans-serif; 
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li { /* We don't style the ul nor the ol element, we style the li element*/
+    font-size: 20px; /* by default the font size is 16px */
+    font-family: sans-serif;
+}
+
+p { /* this declarations apply to all the elements within the p element due to inheritance */
+    font-size: 22px;
+    font-family: sans-serif;
+    line-height: 1.5; /* you can increase the line-box height with line-height, this indicates 1.5 higher than the the font-size (22px multipled by 1.5)*/
+
+}
+
