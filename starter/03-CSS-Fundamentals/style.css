@@ -1,39 +1,74 @@
+h1, 
+h2, 
+h3, 
+h4, 
+li, 
+p {
+    font-family: serif;
+}
+
 h1 /* selector */ 
 /* declaration block */
 {
     color: blue; /* this declaration contains "property: value(keyword);"*/ 
-    font-size: 26px;  /* property: value (length)*/
-    font-family: sans-serif; 
+    font-size: 26px;  /* property: value (length)*/ 
     text-transform: uppercase;
     font-style: italic;
 }
 
 h2 {
     font-size: 40px;
-    font-family: sans-serif;
 }
 
 h3 {
     font-size: 30px;
-    font-family: sans-serif;
 }
 
 h4 {
     font-size: 20px;
-    font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 li { /* We don't style the ul nor the ol element, we style the li element*/
     font-size: 20px; /* by default the font size is 16px */
-    font-family: sans-serif;
 }
 
 p { /* this declarations apply to all the elements within the p element due to inheritance */
     font-size: 22px;
-    font-family: sans-serif;
     line-height: 1.5; /* you can increase the line-box height with line-height, this indicates 1.5 higher than the the font-size (22px multipled by 1.5)*/
-
 }
 
+/* descendant selector 
+ this selects al the p's elements that are children from the footer 
+footer p { 
+    font-size: 16px;
+} */
+
+/*
+article header p {  This because there is also a header within the body element so that element was also modified with the font-style italic, here we can especify that the header that we want to be modified is the one inside of the article. 
+font-style: italic;
+}
+*/
+
+/*  Selectors */
+
+/* hash selector (id selector) -> an id name can only be used one time for one element */
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#copyright {
+    font-size: 16px;
+}
+
+/* dot selector (class selector) -> a class name can be used multiple time for different elements. Always use this and avoid id's*/
+.related-author {
+    font-size: 18px;
+    font-weight:bold ;
+}
+
+.related {
+    list-style: none;
+}
