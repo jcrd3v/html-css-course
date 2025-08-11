@@ -4,13 +4,19 @@ h3,
 h4, 
 li, 
 p {
-    font-family: serif;
+    font-family: sans-serif;
+    color: #444;
+}
+
+/* Colors */
+h1, h2, h3 {
+    color: #1098ad; 
 }
 
 h1 /* selector */ 
 /* declaration block */
 {
-    color: blue; /* this declaration contains "property: value(keyword);"*/ 
+    /* a declaration contains "property: value(keyword);"*/ 
     font-size: 26px;  /* property: value (length)*/ 
     text-transform: uppercase;
     font-style: italic;
@@ -72,3 +78,18 @@ font-style: italic;
 .related {
     list-style: none;
 }
+
+.main-header {
+    background-color: #f7f7f7;
+}
+
+/* element selector */
+aside {
+    background-color:#f7f7f7;
+    border-top: 5px solid #1098ad; /* special property that accepts multiple values -> width - style - color */
+    border-bottom: 5px solid #1098ad;
+}
+
+/* body {
+    background-color: #ffffe3;
+} */
