@@ -1,0 +1,24 @@
+Exercise 1: Personal Recipe Card
+Build a simple recipe card webpage for your favorite dish.
+Requirements:
+
+Create an HTML file with a recipe (choose any dish you like)
+Include these elements:
+
+A main title (recipe name)
+A subtitle (like "Prep time: 15 minutes")
+An ingredients list (unordered list)
+A numbered steps list (ordered list)
+At least 2-3 paragraphs describing the dish or cooking tips
+A footer with your name as the "chef"
+
+
+
+CSS Styling Requirements:
+
+Style the main title to be uppercase and a different color
+Make the subtitle italic
+Style the lists (maybe remove bullets from ingredients, style the steps)
+Use different font sizes for different elements
+Add a background color to either the whole page or a specific section
+Make your name in the footer stand out somehow
