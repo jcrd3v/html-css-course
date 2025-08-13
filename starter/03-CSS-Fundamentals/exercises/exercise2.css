@@ -1,0 +1,80 @@
+body {
+  background-color: #faf9fb; 
+  font-family: sans-serif;
+}
+
+h1, h3{
+  color: #166534;
+}
+
+a {
+  margin-right: 5px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+aside {
+  font-size: 20px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+article header p {
+  font-size: 18px;
+  font-style:italic;
+  color: #525252 ; 
+}
+
+footer p {
+  font-size: 16px;
+}
+
+.posiciones-fulbito {
+  list-style: none;
+  font-size: 21px;
+}
+.imagen-autor {
+  margin-top: 12px;
+}
+
+.titulo {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.subtitulo {
+  font-size: 26px
+}
+
+#cabecera-principal {
+  background-color: #f0fdf4;
+  border-top: 5px solid #4ade80;
+  border-bottom: 5px solid #4ade80;
+}
+
+#titulo-recomendaciones {
+  text-align: center;
+}
+
+.recomendaciones {
+  background-color: #f0fdf4;
+  border-top: 5px solid #4ade80;
+  border-bottom: 5px solid #4ade80; 
+}
+
+.autores-relacionados {
+  font-size: 18px;
+}
+
+.footer-autor-pagina {
+  font-style: italic;
+}

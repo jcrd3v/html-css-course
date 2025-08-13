@@ -1,0 +1,24 @@
+Exercise 2: Mini Blog Post About Your Hobby
+Create a blog post webpage about something you're passionate about.
+Requirements:
+
+Create an HTML structure similar to the Code Magazine you have
+Include:
+
+A header with a site name and navigation links (even if they don't go anywhere yet)
+A main article with title, author info, and at least 4-5 paragraphs
+A sidebar with "Related Articles" (fake titles and authors are fine)
+A footer
+
+
+Use both ID and class selectors
+Include at least one image (can be a placeholder)
+
+CSS Styling Requirements:
+
+Create a header with background color
+Style the sidebar differently from the main content
+Use descendant selectors for at least one element
+Make the related articles list look clean
+Add borders to at least one section
+Use different font sizes and colors throughout
