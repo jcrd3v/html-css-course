@@ -1,3 +1,21 @@
+/* The universal selector */
+/* 
+* {
+    border-top: 10px solid #1098ad; This applies to all the elements, no inheritance involved
+} 
+*/
+
+
+/* Inheritance */
+/* This doesn't select all the elements, just inherit this properties to his childs*/
+body {
+    font-family: sans-serif;
+    color:#444;
+
+    border-top: 10px solid #1098ad; /* some elements like this one aren't inherited*/
+}
+
+/* 
 h1, 
 h2, 
 h3, 
@@ -6,7 +24,8 @@ li,
 p {
     font-family: sans-serif;
     color: #444;
-}
+} 
+*/
 
 /* Colors */
 h1, h2, h3 {
@@ -93,3 +112,80 @@ aside {
 /* body {
     background-color: #ffffe3;
 } */
+
+/* 
+.first-li {
+    font-weight: bold;
+} 
+*/
+
+
+/* Pseudo elements */
+li:first-child { /* select all the first child elements that belong to the parent element */
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+li:nth-child(odd) { /* use a number as a parameter or a keyword (use case: tables to alternate colors)*/
+    /* color:red; */
+}
+
+
+/* Misconception: this won't work */
+article p:first-child { /* this doesn't work because p isn't the first child, header is */
+    color:red;
+}
+
+/* Styling links */
+
+
+a:visited {
+    /* color: #777; */
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+a:link {
+    color: #1098ad;
+    text-decoration: none; /* to get rid of the underlines of our links*/
+}
+
+/* 
+Resolving conflicts
+#copyright {
+    color:red;
+}
+
+.copyright {
+    color:blue;
+}
+
+.text {
+    color: yellow;
+}
+
+footer p {
+    color: green !important; This doesn't respect any rule and takes priority
+} 
+*/
+
+/* nav a:link, nav p {
+    font-size: 18px;
+} */
+
+nav {
+    font-size: 16px;
+}
