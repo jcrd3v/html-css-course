@@ -5,14 +5,48 @@
 } 
 */
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* Inheritance */
 /* This doesn't select all the elements, just inherit this properties to his childs*/
 body {
     font-family: sans-serif;
     color:#444;
-
     border-top: 10px solid #1098ad; /* some elements like this one aren't inherited*/
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    /* padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+    padding: 20px 40px; /* height - width */
+    margin-bottom: 60px;
+}
+
+.post-header {
+    margin-bottom: 30px;
+}
+
+/* element selector */
+aside {
+    background-color:#f7f7f7;
+    border-top: 5px solid #1098ad; /* special property that accepts multiple values -> width - style - color */
+    border-bottom: 5px solid #1098ad;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 0;
+}
+
+nav {
+    font-size: 16px;
+}
+
+article {
+    margin-bottom: 60px;
 }
 
 /* 
@@ -43,10 +77,13 @@ h1 /* selector */
 
 h2 {
     font-size: 40px;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 30px;
+    margin-top: 40px; /* collapsing margins with p */
+    margin-bottom: 20px; 
 }
 
 h4 {
@@ -55,13 +92,24 @@ h4 {
     text-align: center;
 }
 
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 li { /* We don't style the ul nor the ol element, we style the li element*/
     font-size: 20px; /* by default the font size is 16px */
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 p { /* this declarations apply to all the elements within the p element due to inheritance */
     font-size: 22px;
     line-height: 1.5; /* you can increase the line-box height with line-height, this indicates 1.5 higher than the the font-size (22px multipled by 1.5)*/
+    margin-bottom: 15px; /* collapsing margins with h3 */
 }
 
 /* descendant selector 
@@ -98,16 +146,6 @@ font-style: italic;
     list-style: none;
 }
 
-.main-header {
-    background-color: #f7f7f7;
-}
-
-/* element selector */
-aside {
-    background-color:#f7f7f7;
-    border-top: 5px solid #1098ad; /* special property that accepts multiple values -> width - style - color */
-    border-bottom: 5px solid #1098ad;
-}
 
 /* body {
     background-color: #ffffe3;
@@ -185,7 +223,3 @@ footer p {
 /* nav a:link, nav p {
     font-size: 18px;
 } */
-
-nav {
-    font-size: 16px;
-}
